@@ -12,7 +12,7 @@ function App() {
         <Header />
         <Routes>
           <Route
-            path="/search/:searchterm"
+            path="/search/:deepak"
             element={
               <div className="app__page">
                 <Sidebar />
