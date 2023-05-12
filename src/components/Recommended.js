@@ -1,11 +1,11 @@
 import "./Recommended.css";
 import VideoCard from "./VideoCard";
-import myImage from "./Assests/myImage.jpg";
-import riverImage from "./Assests/river_image.png";
-import shipImage from "./Assests/ship_image.png";
-import beachImage from "./Assests/beach_image.png";
-import cityImage from "./Assests/city_image.png";
-import pirateImage from "./Assests/pirate_image.png";
+import myImage from "../Assests/myImage.jpg";
+import riverImage from "../Assests/river_image.png";
+import shipImage from "../Assests/ship_image.png";
+import beachImage from "../Assests/beach_image.png";
+import cityImage from "../Assests/city_image.png";
+import pirateImage from "../Assests/pirate_image.png";
 
 function Recommended() {
   return (

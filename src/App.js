@@ -1,9 +1,9 @@
 import "./App.css";
-import Header from "./Header";
-import Recommended from "./Recommended";
-import Sidebar from "./Sidebar";
+import Header from "./pages/UI/Header";
+import Recommended from "./components/Recommended";
+import Sidebar from "./pages/UI/Sidebar";
+import SearchPage from "./pages/SearchPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import SearchPage from "./SearchPage";
 
 function App() {
   return (

@@ -6,7 +6,7 @@ import VideoCallIcon from "@mui/icons-material/VideoCall";
 import AppsIcon from "@mui/icons-material/Apps";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import Avatar from "@mui/material/Avatar";
-import profilePic from "./Assests/Profile_Pic.jpeg";
+import profilePic from "../../Assests/Profile_Pic.jpeg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
