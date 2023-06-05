@@ -14,3 +14,9 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.resultNotFound {
+  margin: 50px;
+  color: red;
+  font-weight: 400;
+}

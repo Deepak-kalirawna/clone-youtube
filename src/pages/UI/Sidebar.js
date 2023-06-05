@@ -13,24 +13,87 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import FlagIcon from "@mui/icons-material/Flag";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import AnnouncementOutlinedIcon from "@mui/icons-material/AnnouncementOutlined";
+import { Link } from "react-router-dom";
 function Sidebar() {
   return (
     <div className="sidebar">
-      <SidebarRow selected Icon={HomeIcon} title="Home" />
-      <SidebarRow Icon={WhatshotIcon} title="Trending" />
-      <SidebarRow Icon={SubscriptionsIcon} title="Subscriptions" />
+      <Link style={{ color: "black", textDecoration: "none" }} to="/">
+        <SidebarRow Icon={HomeIcon} title="Home" />
+      </Link>
+      <Link
+        style={{ color: "black", textDecoration: "none" }}
+        to={`/search/post`}
+      >
+        <SidebarRow Icon={WhatshotIcon} title="Trending" />
+      </Link>
+      <Link
+        style={{ color: "black", textDecoration: "none" }}
+        to={`/search/post`}
+      >
+        <SidebarRow Icon={SubscriptionsIcon} title="Subscriptions" />
+      </Link>
       <hr />
-      <SidebarRow Icon={VideoLibraryIcon} title="Library" />
-      <SidebarRow Icon={HistoryIcon} title="History" />
-      <SidebarRow Icon={OndemandVideoIcon} title="Your Videos" />
-      <SidebarRow Icon={WatchLaterIcon} title="Watch Later" />
-      <SidebarRow Icon={ThumbUpAltIcon} title="Liked Videos" />
-      <SidebarRow Icon={ExpandMoreIcon} title="Show More" />
+      <Link
+        style={{ color: "black", textDecoration: "none" }}
+        to={`/search/post`}
+      >
+        <SidebarRow Icon={VideoLibraryIcon} title="Library" />
+      </Link>
+      <Link
+        style={{ color: "black", textDecoration: "none" }}
+        to={`/search/post`}
+      >
+        <SidebarRow Icon={HistoryIcon} title="History" />
+      </Link>
+      <Link
+        style={{ color: "black", textDecoration: "none" }}
+        to={`/search/post`}
+      >
+        <SidebarRow Icon={OndemandVideoIcon} title="Your Videos" />
+      </Link>
+      <Link
+        style={{ color: "black", textDecoration: "none" }}
+        to={`/search/post`}
+      >
+        <SidebarRow Icon={WatchLaterIcon} title="Watch Later" />
+      </Link>
+      <Link
+        style={{ color: "black", textDecoration: "none" }}
+        to={`/search/post`}
+      >
+        <SidebarRow Icon={ThumbUpAltIcon} title="Liked Videos" />
+      </Link>
+      <Link
+        style={{ color: "black", textDecoration: "none" }}
+        to={`/search/post`}
+      >
+        <SidebarRow Icon={ExpandMoreIcon} title="Show More" />
+      </Link>
       <hr />
-      <SidebarRow Icon={SettingsIcon} title="Setting" />
-      <SidebarRow Icon={FlagIcon} title="Report history" />
-      <SidebarRow Icon={HelpOutlineIcon} title="Help" />
-      <SidebarRow Icon={AnnouncementOutlinedIcon} title="Send feedback" />
+      <Link
+        style={{ color: "black", textDecoration: "none" }}
+        to={`/search/post`}
+      >
+        <SidebarRow Icon={SettingsIcon} title="Setting" />
+      </Link>
+      <Link
+        style={{ color: "black", textDecoration: "none" }}
+        to={`/search/post`}
+      >
+        <SidebarRow Icon={FlagIcon} title="Report history" />
+      </Link>
+      <Link
+        style={{ color: "black", textDecoration: "none" }}
+        to={`/search/post`}
+      >
+        <SidebarRow Icon={HelpOutlineIcon} title="Help" />
+      </Link>
+      <Link
+        style={{ color: "black", textDecoration: "none" }}
+        to={`/search/post`}
+      >
+        <SidebarRow Icon={AnnouncementOutlinedIcon} title="Send feedback" />
+      </Link>
       <hr />
 
       <footer className="sidebar__footer">
@@ -41,3 +104,9 @@ function Sidebar() {
   );
 }
 export default Sidebar;
+
+{
+  /* <Link to={`/search/${inputSearch}`}>
+          <SidebarRow Icon={HelpOutlineIcon} title="Help" />
+        </Link> */
+}

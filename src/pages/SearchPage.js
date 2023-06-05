@@ -8,14 +8,18 @@ import shipImage from "../Assests/ship_image.png";
 import beachImage from "../Assests/beach_image.png";
 import cityImage from "../Assests/city_image.png";
 import pirateImage from "../Assests/pirate_image.png";
+import { useContext } from "react";
+import SearchContext from "../utils/search-context";
 
 function SearchPage() {
+  const { activeItem, setActive } = useContext(SearchContext);
   return (
     <div className="searchPage">
       <div className="searchPage__filter">
         <TuneOutlinedIcon />
         <h2>FILTER</h2>
       </div>
+      <h2 className="searchPage__activeItem">{activeItem}</h2>
       <hr />
       <ChannelRow
         image={myImage}
