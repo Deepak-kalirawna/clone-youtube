@@ -20,3 +20,9 @@
   color: red;
   font-weight: 400;
 }
+
+@media (max-width: 450px) {
+  .recommendedVideos {
+    padding: 5px;
+  }
+}

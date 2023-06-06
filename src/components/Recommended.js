@@ -154,19 +154,41 @@ function Recommended() {
       <h2>Recommended</h2>
       <div className="recommendedVideos__videos">
         {searchContext.searchResult ? (
-          searchContext.filterdPosts.map((post) => {
-            return (
-              <VideoCard
-                title={post.title}
-                views={post.views}
-                timestamp={post.timestamp}
-                channelImage={post.channelImage}
-                channel={post.channel}
-                image={post.image}
-                key={post.id}
-              />
-            );
-          })
+          <>
+            {searchContext.filterdPosts.map((post) => {
+              return (
+                <VideoCard
+                  title={post.title}
+                  views={post.views}
+                  timestamp={post.timestamp}
+                  channelImage={post.channelImage}
+                  channel={post.channel}
+                  image={post.image}
+                  key={post.id}
+                />
+              );
+            })}
+            {searchContext.filterdPosts.length === 15 ? (
+              ""
+            ) : (
+              <div>
+                <Button
+                  sx={{
+                    margin: 10,
+                  }}
+                  variant="contained"
+                  color="success"
+                  onClick={() => {
+                    searchContext.setSearchText("");
+                    searchContext.setSearchResult(true);
+                    searchContext.setfilterdPosts(DUMMY_DATA);
+                  }}
+                >
+                  Go Back
+                </Button>
+              </div>
+            )}
+          </>
         ) : (
           <div className="resultNotFound">
             <h2>Result Not Found !!! Please Try Again...</h2>

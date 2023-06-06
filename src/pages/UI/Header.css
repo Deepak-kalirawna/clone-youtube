@@ -26,7 +26,7 @@
 .header__input {
   display: flex;
   align-items: center;
-  width: 40%;
+  /* max-width: 40%; */
   border: 1px solid black;
 }
 
@@ -41,4 +41,14 @@
   background-color: #fafafa;
   border-left: 1px solid lightgray;
   color: gray;
+}
+
+/* .header__leftToHide {
+  display: none;
+}*/
+
+@media (max-width: 611px) {
+  .header {
+    padding: 5px;
+  }
 }

@@ -11,7 +11,7 @@ import profilePic from "../../Assests/Profile_Pic.jpeg";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import SearchContext from "../../utils/search-context";
-import { Button } from "@mui/material";
+import { Button, Hidden } from "@mui/material";
 import { filterData } from "../../utils/helper";
 import myImage from "../../Assests/myImage.jpg";
 import riverImage from "../../Assests/river_image.png";
@@ -184,14 +184,16 @@ function Header() {
   return (
     <div className="header">
       <div className="header__left">
-        <MenuIcon />
-        <Link to="/">
-          <img
-            className="header__logo"
-            src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_of_YouTube_%282015-2017%29.svg"
-            alt="youtubelogo"
-          />
-        </Link>
+        <MenuIcon className="header__leftToHide" />
+        <Hidden mdDown>
+          <Link to="/">
+            <img
+              className="header__logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_of_YouTube_%282015-2017%29.svg"
+              alt="youtubelogo"
+            />
+          </Link>
+        </Hidden>
       </div>
       <div className="header__input">
         <input
@@ -206,9 +208,11 @@ function Header() {
         </Button>
       </div>
       <div className="header__icons">
-        <VideoCallIcon className="header__icon" />
-        <AppsIcon className="header__icon" />
-        <NotificationsIcon className="header__icon" />
+        <Hidden mdDown>
+          <VideoCallIcon className="header__icon" />
+          <AppsIcon className="header__icon" />
+          <NotificationsIcon className="header__icon" />
+        </Hidden>
         <Avatar alt="Deepak" src={profilePic} sx={{ width: 30, height: 30 }} />
       </div>
     </div>
