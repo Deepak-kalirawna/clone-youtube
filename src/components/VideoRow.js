@@ -10,7 +10,7 @@ function VideoRow({
 }) {
   return (
     <div className="videoRow">
-      <img src={image} alt={channel} />
+      <img src={image} alt={channel} className="videoRow__thumbnail" />
       <div className="videoRow__text">
         <h3>{title}</h3>
         <p className="videoRow__headline">

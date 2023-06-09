@@ -25,3 +25,15 @@
   width: 120px !important;
   margin: 10px 60px;
 }
+
+@media (max-width: 800px) {
+  .channelRow {
+    display: flex;
+    flex-direction: column;
+  }
+  .channelRow__logo {
+    height: 80px !important;
+    width: 80px !important;
+    margin: 10px 30px;
+  }
+}

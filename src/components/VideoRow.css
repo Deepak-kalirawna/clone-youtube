@@ -34,3 +34,17 @@
   font-weight: bolder;
   color: rgb(84, 157, 211);
 }
+
+@media (max-width: 650px) {
+  .videoRow {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+  }
+  .videoRow > img {
+    width: 220px;
+  }
+  .videoRow__text > h3 {
+    font-size: 0.95rem;
+  }
+}

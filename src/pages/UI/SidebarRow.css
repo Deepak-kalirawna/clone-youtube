@@ -51,3 +51,9 @@
 .sidebar__row--active > .sidebarRow__title {
   font-weight: bold;
 }
+
+@media (max-width: 500px) {
+  .sidebarRow {
+    padding: 10px 10px;
+  }
+}
