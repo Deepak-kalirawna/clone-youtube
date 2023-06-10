@@ -33,11 +33,11 @@
   width: 30px !important;
 }
 
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
   .videoCard {
     width: 220px;
   }
   .videoCard__thumbnail {
     width: 220px;
   }
-}
+} */
