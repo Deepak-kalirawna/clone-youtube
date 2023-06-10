@@ -21,8 +21,8 @@
   font-weight: 400;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 650px) {
   .recommendedVideos {
-    padding: 5px;
+    margin: auto;
   }
 }

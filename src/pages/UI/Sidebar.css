@@ -19,10 +19,15 @@
   padding: 12px 24px 0px;
 }
 
-@media (max-width: 650px) {
+/* @media (max-width: 650px) {
   .sidebar__footer {
     font-size: 7px;
     color: black;
     padding: 12px 24px 0px;
+  }
+} */
+@media (max-width: 650px) {
+  .sidebar {
+    display: none;
   }
 }
